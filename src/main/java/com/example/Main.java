@@ -32,7 +32,7 @@ public class Main {
                     String[] arrayLinea1 = linea1.split(" ");
                     System.out.println("La stringa numero 2 è composta da: " + arrayLinea1[1]);
 
-                    File file = new File("Socket-e-Http/htdocs" + arrayLinea1[1]);
+                    File file = new File("htdocs" + arrayLinea1[1]);
                     if (file.exists())
                         sendBinaryFile(out, file);
                     else {
